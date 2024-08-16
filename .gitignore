@@ -9,3 +9,4 @@
 /Backend/images/*.jpeg
 /Backend/images/*.jpg
 /Backend/database.sqlite
+/Backend/*.sqlite
