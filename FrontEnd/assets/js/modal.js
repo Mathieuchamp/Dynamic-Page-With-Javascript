@@ -85,18 +85,6 @@ ouvertureModal.addEventListener('click', () => {
     modal.style.display = 'flex';
     });
 
-// Click retour en arrière
-const retourModal=document.querySelector('.retourModal')
-
-retourModal.addEventListener('click', () => {
-    
-    const modal = document.getElementById('modalAjout');
-
-    modalAjout.style.display = 'flex';
-
-    modalAjoutPhoto.style.display = 'none';
-    });
-
 
 // Passer à la deuxieme modal
     const ajouterPhotoBtn = document.querySelector('.modal__one-addbutton');
@@ -109,6 +97,19 @@ ajouterPhotoBtn.addEventListener('click', () => {
 
     modalAjoutPhoto.style.display = 'flex';
 });
+
+
+// Click retour en arrière
+const retourModal=document.querySelector('.retourModal')
+
+retourModal.addEventListener('click', () => {
+    
+    const modal = document.getElementById('modalAjout');
+
+    modalAjout.style.display = 'flex';
+
+    modalAjoutPhoto.style.display = 'none';
+    });
 
 
 // Ajout des catégories dans le formulaire
@@ -160,18 +161,18 @@ document.getElementById('addPhoto').addEventListener('change', function(event) {
         reader.onload = function(e) {
             const preview = document.getElementById('imagePreview');
             preview.src = e.target.result;
-            preview.style.display = 'block';  // Affiche l'image
-            preview.style.width = '100%'; // L'image remplit tout le conteneur
-            preview.style.height = '100%'; // L'image remplit tout le conteneur
+            preview.style.display = 'block';
+            preview.style.width = '100%';
+            preview.style.height = '100%';
             
-            // Masquer l'icône et le texte
+// Masquer l'icône et le texte
             document.querySelector('.AjoutIcon').style.display = 'none';
             document.querySelector('.addImage').style.display = 'none';
             document.querySelector('.ajoutImageModal span').style.display = 'none';
             document.querySelector('.format').style.display = 'none';
             
         };
-        reader.readAsDataURL(file);  // Lire le fichier comme une URL de données
+        reader.readAsDataURL(file);
     }
 });
 
@@ -210,7 +211,7 @@ document.getElementById('addPhoto').addEventListener('change', function(event) {
                     item.className = 'image-wrapper';
         
                     const img = document.createElement('img');
-                    img.src = data.imageUrl;  // Utilisez l'URL retournée par l'API
+                    img.src = data.imageUrl;
                     img.alt = titleProject;
         
                     const deleteIcon = document.createElement('i');

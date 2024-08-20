@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
  
     if (token) {
         loginLink.textContent = 'logout';
-        loginLink.style.cursor = 'pointer';
         loginLink.style.color = 'black';
         navEdition.style.display = 'flex';
  
