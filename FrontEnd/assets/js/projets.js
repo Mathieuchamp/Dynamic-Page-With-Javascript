@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Filtres des catégories
+    // Recupération des filtres des catégories
     fetch('http://localhost:5678/api/categories', {
         method: 'GET',
         headers: { 'Accept': 'application/json' }
