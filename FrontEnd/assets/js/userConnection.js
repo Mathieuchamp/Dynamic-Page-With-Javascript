@@ -12,10 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (boutonModifier) {
             boutonModifier.style.display = 'inline';
         }
-
-        if (filters) {
-            filters.remove();
-        }
  
         loginLink.addEventListener('click', function(event) {
             event.preventDefault();

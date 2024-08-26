@@ -8,6 +8,16 @@ formulaire.addEventListener("submit", async (event) => {
     const messageError = document.querySelector('#error');
     const filters = document.querySelector('.filters');
 
+
+    if (email.value.trim() === "" || password.value.trim() === "") {
+        messageError.textContent = "Veuillez remplir les champs obligatoires*";
+        messageError.style.display = 'block';
+        setTimeout(() => {
+            messageError.style.display = 'none';
+        }, 6000);
+        return;
+    }
+
     const user = {
         email: email.value,
         password: password.value
