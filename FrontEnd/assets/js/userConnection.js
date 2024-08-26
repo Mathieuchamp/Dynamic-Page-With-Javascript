@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loginLink.textContent = 'logout';
         loginLink.style.color = 'black';
         navEdition.style.display = 'flex';
+        filters.style.display = 'none';
  
         if (boutonModifier) {
             boutonModifier.style.display = 'inline';
