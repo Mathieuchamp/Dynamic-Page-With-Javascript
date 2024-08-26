@@ -462,6 +462,7 @@ a:visited {
 	gap: 40px;
 	height: 72%;
 	max-height: 680px;
+	max-width: 630px;
 	background-color: white;
 	border-radius: 10px;
 	padding-top: 60px;
