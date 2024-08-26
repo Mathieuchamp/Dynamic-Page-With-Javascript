@@ -227,11 +227,7 @@ document.getElementById('addPhoto').addEventListener('change', function(event) {
                 } else {
                     alert('Erreur lors de l\'ajout du projet');
                 }
-            })
-            .catch(error => {
-                console.error('Erreur lors de l\'ajout du projet:', error);
-                alert('Erreur lors de l\'ajout du projet');
-            });
+            })          
         }
         
         document.getElementById('validateProject').addEventListener('click', ajouterProjet);

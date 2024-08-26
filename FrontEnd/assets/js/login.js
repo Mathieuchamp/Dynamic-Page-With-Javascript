@@ -36,7 +36,7 @@ formulaire.addEventListener("submit", async (event) => {
         } else {
             const errorData = await response.json();
             
-            // Remplace "user not found" par un message personnalisé
+// Remplace "user not found" par un message personnalisé
             if (errorData.message === "user not found") {
                 messageError.textContent = "Erreur dans l’identifiant ou le mot de passe";
             } else {
@@ -50,7 +50,6 @@ formulaire.addEventListener("submit", async (event) => {
         }   
 
     } catch (error) {
-        console.log("Échec de l'authentification", error);
         messageError.textContent = "Erreur dans l’identifiant ou le mot de passe";
         messageError.style.display = 'block';
         setTimeout(() => {

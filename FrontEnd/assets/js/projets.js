@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Recupération des filtres des catégories
+// Recupération des filtres des catégories
     fetch('http://localhost:5678/api/categories', {
         method: 'GET',
         headers: { 'Accept': 'application/json' }
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(categories => {
         const filters = document.querySelector('.filters');
         
-        // Création du bouton "Tous"
+// Création du bouton "Tous"
         const BoutonTous = document.createElement('button');
         BoutonTous.textContent = "Tous";
         BoutonTous.classList.add('filtersNone');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setActiveButton(BoutonTous);
         filtreprojets();
     
-        // Création des boutons pour chaque catégorie
+// Création des boutons pour chaque catégorie
         categories.forEach(category => {
             const button = document.createElement('button');
             button.textContent = category.name;
